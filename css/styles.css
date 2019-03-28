@@ -38,9 +38,10 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
-  padding-top: 120px;
+ 
  
 }
+
 #footer {
   background-color: #444;
   color: #aaa;
@@ -191,6 +192,9 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
+.inside #maincontent{
+  padding-top: 120px;
+  }
 .inside header {
   position: fixed;
   top: 0;
