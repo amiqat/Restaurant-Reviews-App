@@ -19,7 +19,7 @@ function registerServiceWorker() {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker
       .register('./sw.js', {
-         scope: '/Restaurant-Reviews-App/'
+        
       })
       .then((reg) => {
         console.log('Service Worker registered', reg.scope);
