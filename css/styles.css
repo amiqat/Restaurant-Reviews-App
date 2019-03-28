@@ -342,7 +342,7 @@ color: #fff;
 
 }
 @media screen and (max-width: 396px){
-#maincontent{
+.inside #maincontent{
     padding-top: 145px
   }
 }
