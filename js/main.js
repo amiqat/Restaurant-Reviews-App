@@ -19,7 +19,7 @@ function registerServiceWorker() {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker
       .register('./sw.js', {
-        
+
       })
       .then((reg) => {
         console.log('Service Worker registered', reg.scope);
@@ -186,6 +186,7 @@ createRestaurantHTML = (restaurant) => {
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
   more.tabIndex = '3';
+  more.setAttribute('aria-label', `View Details Of ${restaurant.name} Restaurant`)
   li.append(more)
 
   return li

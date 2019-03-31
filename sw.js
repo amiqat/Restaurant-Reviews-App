@@ -1,4 +1,4 @@
-const Restaurant_CACHE = 'restaurant-review-v2';
+const Restaurant_CACHE = 'restaurant-review-v6';
 
 const assets = [
     '/',
@@ -31,8 +31,9 @@ self.addEventListener('install', (e) => {
 self.addEventListener('activate', (e) => {
     e.waitUntil((async () => {
         const cacheNames = await caches.keys();
+
         await Promise.all(
-            cacheNames.filter(cacheName => cacheName.startsWith('restaurant-')
+            cacheNames.filter(cacheName => cacheName.startsWith('restaurant-review')
                 && cacheName != Restaurant_CACHE).map(cacheName => caches.delete(cacheName)));
     })());
 });

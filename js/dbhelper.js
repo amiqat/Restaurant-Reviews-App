@@ -10,7 +10,7 @@ class DBHelper {
   static get DATABASE_URL() {
     if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
       const port = 8000 // Change this to your server port
-      return `http://localhost:${port}/data/restaurants.json`;
+      return `/data/restaurants.json`;
     } else {
       return `https://amiqat.github.io/Restaurant-Reviews-App/data/restaurants.json`;
     }
